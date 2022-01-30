@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+    .box-shadow:hover{
+        /* border: 2px solid rgb(207, 125, 125); */
+        box-shadow: 0px 0px 4px 5px #1ac5e759;
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">My Notes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0"> </ul>
+                <!--Just to separate the search from My Notes name-->
+                <form class="d-flex">
+                    <input class="form-control me-2 search" type="search" id="search" placeholder="Search" aria-label="Search">
+                    <input type="button" class="btn btn-outline-info" value="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Add note title</h5>
+                <input class="form-control my-3" id="addTitle" type="text" placeholder="Enter title" aria-label="default input example">
+                <h5 class="card-title">Add note text</h5>
+                <textarea class="form-control my-3" id="addTxt" rows="3" placeholder="Your Text for Note goes Here..."></textarea>
+                <button class="btn btn-dark" id="addBtn">Add Note</button>
+            </div>
+        </div>
+        <div class="container row" id="notesBox">
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
