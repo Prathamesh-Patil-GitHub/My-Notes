@@ -38,7 +38,7 @@ function showNotes() {
     notesBox.innerHTML = "";
     if (notes != null) {
         Array.from(notes).forEach(function (element, index) {
-            notesBox.innerHTML += `<div class="card mx-3 my-3 notes box-shadow" style="width:30%">
+            notesBox.innerHTML += `<div class="card mx-3 my-3 notes box-shadow">
         <div class="card-body">
             <h5 class="card-title">${element.title}</h5>
             <p class="card-text">${element.text}</p>
