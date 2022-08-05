@@ -1,4 +1,4 @@
-# mynotes
+# My Notes
 A notes taking web app
 This is simple notes taking app made using HTML, CSS and Vanilla JavaScript.
 It has functionality to add our notes with Main Content and Title.
